@@ -1,17 +1,32 @@
-.grid {
+#grid {
     width: 80%;
     max-width: 800px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+}
 
-    li {
+li{
         width: 100px;
         aspect-ratio: 1;
         background-color: aquamarine;
         margin: 4px;
         line-height: 100px;
         text-align: center;
-    }
+}
+
+.fizz{
+    background-color: blue;
+    color: white;
+}
+
+.buzz{
+    background-color: rgb(211, 17, 17);
+    color: blueviolet;
+}
+
+.fizzbuzz{
+    background-color: yellow;
+    color: palegreen;
 }
