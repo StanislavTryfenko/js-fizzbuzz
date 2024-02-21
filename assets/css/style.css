@@ -1,0 +1,17 @@
+.grid {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+
+    li {
+        width: 100px;
+        aspect-ratio: 1;
+        background-color: aquamarine;
+        margin: 4px;
+        line-height: 100px;
+        text-align: center;
+    }
+}
