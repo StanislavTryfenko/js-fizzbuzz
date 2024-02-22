@@ -1,10 +1,9 @@
 for(let i = 1; i <= 100; i++){
-
+    
     // Create an "li" node:
     const li = document.createElement("li");
 
     if (i % 3 == 0 && i % 5 ==0 ){
-
         // Add a class to "li":
         li.classList.add("fizzbuzz")
 
@@ -13,9 +12,6 @@ for(let i = 1; i <= 100; i++){
 
         // Append the text node to the "li" node:
         li.appendChild(liText);
-
-        // Append the "li" node to the list:
-        document.getElementById("grid").appendChild(li);
     }
     else if (i % 5 == 0){
         // Add a class to "li":
@@ -26,9 +22,6 @@ for(let i = 1; i <= 100; i++){
 
         // Append the text node to the "li" node:
         li.appendChild(liText);
-
-        // Append the "li" node to the list:
-        document.getElementById("grid").appendChild(li);
     }
     else if (i % 3 == 0){
         // Add a class to "li":
@@ -39,19 +32,15 @@ for(let i = 1; i <= 100; i++){
 
         // Append the text node to the "li" node:
         li.appendChild(liText);
-
-        // Append the "li" node to the list:
-        document.getElementById("grid").appendChild(li);
     }
     else{
-
         // Create a text node:
         const liText = document.createTextNode(i);
 
         // Append the text node to the "li" node:
         li.appendChild(liText);
-
-        // Append the "li" node to the list:
-        document.getElementById("grid").appendChild(li);
     }
+
+    // Append the "li" node to the list:
+        document.getElementById("grid").appendChild(li);
 }
