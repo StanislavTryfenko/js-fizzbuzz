@@ -8,30 +8,38 @@ for(let i = 1; i <= 100; i++){
         li.classList.add("fizzbuzz")
 
         // Create a text node:
-        var liText = document.createTextNode("FizzBuzz");
+        let liText = document.createTextNode("FizzBuzz");
+        
+        // Append the text node to the "li" node:
+        li.appendChild(liText);
     }
     else if (i % 5 == 0){
         // Add a class to "li":
         li.classList.add("buzz")
 
         // Create a text node:
-        var liText = document.createTextNode("Buzz");
+        let liText = document.createTextNode("Buzz");
+        
+        // Append the text node to the "li" node:
+        li.appendChild(liText);
     }
     else if (i % 3 == 0){
         // Add a class to "li":
         li.classList.add("fizz")
 
         // Create a text node:
-        var liText = document.createTextNode("Fizz");
+        let liText = document.createTextNode("Fizz");
+        
+        // Append the text node to the "li" node:
+        li.appendChild(liText);
     }
     else{
         // Create a text node:
-        var liText = document.createTextNode(i);
+        let liText = document.createTextNode(i);
 
+        // Append the text node to the "li" node:
+        li.appendChild(liText);
     }
-    
-    // Append the text node to the "li" node:
-    li.appendChild(liText);
 
     // Append the "li" node to the list:
     document.getElementById("grid").appendChild(li);
